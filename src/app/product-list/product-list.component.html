@@ -1,5 +1,35 @@
 <h2>Products</h2>
+<!-- Here we use the *ngFor directive to loop through ALL items in the products object (../products.ts) -->
+<div *ngFor="let product of products">
+    <h3><a [title]="product.name + ' details'">{{ product.name }}</a></h3>
+    <!-- {{}} - Interpolation -->
+    <p *ngIf="product.description">
+        Description: {{ product.description }}
+    </p>
+    <!-- The syntax here for adding a click event is called 'Event Binding' -->
+    <button (click)="share()">
+        Share
+    </button>
+</div>
 
+<!-- 
+
+NOTES:
+
+*ngFor is shorthand for: 
+    <ng-template ngFor let-product [ngForOf]="products">
+        <h3><a [title]="product.name + ' details'">{{ product.name }}</a></h3>
+        <p *ngIf="product.description">
+            Description: {{ product.description }}
+        </p>
+        <button (click)="share()">
+            Share
+        </button>
+    </ng-template> 
+
+    1. Discards the need for ng-tempalte tags
+    2. *ngFor="let product of products" MUCH shorter
+-->
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
