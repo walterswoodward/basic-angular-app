@@ -1,6 +1,6 @@
 # Intro
 
-Hello and Welcome to my Basic Angular App. I am building this app following along with the tutorial [here](https://angular.io/start). My sincere appreciation to all who who have worked so hard to put this awesome tutorial and framework together!
+Hello and Welcome to my Basic Angular App. I am building this app following along with the current official [Angular Docs Tutorial Page](https://angular.io/start). My sincere appreciation to all who who have worked so hard to put this awesome tutorial and framework together! [View My Progress With Basic Angular App]https://basic-angular-app.netlify.com/.
 
 # BasicAngularApp
 
