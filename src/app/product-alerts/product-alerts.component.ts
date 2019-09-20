@@ -15,8 +15,8 @@ export class ProductAlertsComponent implements OnInit {
   // view on a higher level e.g. product, which is in the product-list component view via *ngFor="let product of products"
   @Input() product;
   @Output() notify = new EventEmitter();
-  constructor() { 
-    console.log('Hello from ProductAlertsComponent!');
+  constructor() {
+    
   }
 
   ngOnInit() {
