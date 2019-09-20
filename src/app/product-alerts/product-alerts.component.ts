@@ -14,6 +14,7 @@ export class ProductAlertsComponent implements OnInit {
   // SO...this means that you will only ever see @Input used for a property that has ALREADY been brought into the
   // view on a higher level e.g. product, which is in the product-list component view via *ngFor="let product of products"
   @Input() product;
+  @Output() notify = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
