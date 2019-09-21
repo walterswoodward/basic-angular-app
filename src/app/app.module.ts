@@ -9,6 +9,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { TutorialDocsLinkComponent } from './tutorial-docs-link/tutorial-docs-link.component';
+import { DeployedAppLinkComponent } from './deployed-app-link/deployed-app-link.component';
 
 @NgModule({
   imports: [
@@ -25,10 +26,11 @@ import { TutorialDocsLinkComponent } from './tutorial-docs-link/tutorial-docs-li
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
-    TutorialDocsLinkComponent
+    TutorialDocsLinkComponent,
+    DeployedAppLinkComponent
   ],
   bootstrap: [ AppComponent ],
-  exports: [ProductAlertsComponent, ProductDetailsComponent, TutorialDocsLinkComponent]
+  exports: [ProductAlertsComponent, ProductDetailsComponent, TutorialDocsLinkComponent, DeployedAppLinkComponent]
 })
 export class AppModule { }
 
