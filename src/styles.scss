@@ -114,6 +114,15 @@ $border-dark: rgba($base-color, 0.88);
     opacity: 0.5;
     cursor: auto;
   }
+
+  .hr_thin-dashed-white {
+    border: 1px dashed white;
+    border-radius: 5px;
+  }
+
+  #tutorial-docs-button {
+    background: lightcoral;
+  }
   
   /* Fancy Button */
   
