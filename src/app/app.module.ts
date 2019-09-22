@@ -10,14 +10,18 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { TutorialDocsLinkComponent } from './tutorial-docs-link/tutorial-docs-link.component';
 import { DeployedAppLinkComponent } from './deployed-app-link/deployed-app-link.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    // This is where new routes are registered! You can add a component here as soon as it is created!
+    // You will also need a [router-link] property put in one of the views.
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent }
+      { path: 'products/:productId', component: ProductDetailsComponent },
+      { path: 'cart', component: CartComponent },
     ])
   ],
   declarations: [
@@ -27,10 +31,11 @@ import { DeployedAppLinkComponent } from './deployed-app-link/deployed-app-link.
     ProductAlertsComponent,
     ProductDetailsComponent,
     TutorialDocsLinkComponent,
-    DeployedAppLinkComponent
+    DeployedAppLinkComponent,
+    CartComponent
   ],
   bootstrap: [ AppComponent ],
-  exports: [ProductAlertsComponent, ProductDetailsComponent, TutorialDocsLinkComponent, DeployedAppLinkComponent]
+  exports: [ProductAlertsComponent, ProductDetailsComponent, TutorialDocsLinkComponent, DeployedAppLinkComponent, CartComponent]
 })
 export class AppModule { }
 
