@@ -20,6 +20,12 @@ export class CartService {
     return this.items;
   }
 
+  // What I don't understand is, why is this NOT necessary for the products.ts object?
+  // Why do we use the Http client module in this case?
+  getShippingPrices() {
+    return this.http.get('/assets/shipping.json');
+  }
+
   constructor(
     private http: HttpClient
   ) { }

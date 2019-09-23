@@ -15,6 +15,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { TutorialDocsLinkComponent } from './tutorial-docs-link/tutorial-docs-link.component';
 import { DeployedAppLinkComponent } from './deployed-app-link/deployed-app-link.component';
 import { CartComponent } from './cart/cart.component';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
   imports: [
@@ -28,6 +29,7 @@ import { CartComponent } from './cart/cart.component';
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
+      { path: 'shipping', component: ShippingComponent },
     ])
   ],
   declarations: [
@@ -38,11 +40,12 @@ import { CartComponent } from './cart/cart.component';
     ProductDetailsComponent,
     TutorialDocsLinkComponent,
     DeployedAppLinkComponent,
-    CartComponent
+    CartComponent,
+    ShippingComponent
   ],
   bootstrap: [ AppComponent ],
   // What is exports here? Apparently this is NOT necessary for this Tutorial App to function...????
-  exports: [ProductAlertsComponent, ProductDetailsComponent, TutorialDocsLinkComponent, DeployedAppLinkComponent, CartComponent]
+  // exports: [ProductAlertsComponent, ProductDetailsComponent, TutorialDocsLinkComponent, DeployedAppLinkComponent, CartComponent]
 })
 export class AppModule { }
 
