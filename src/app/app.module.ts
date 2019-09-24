@@ -16,6 +16,7 @@ import { TutorialDocsLinkComponent } from './tutorial-docs-link/tutorial-docs-li
 import { DeployedAppLinkComponent } from './deployed-app-link/deployed-app-link.component';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { PersonalLinksComponent } from './personal-links/personal-links.component';
 
 @NgModule({
   imports: [
@@ -38,10 +39,9 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductListComponent,
     ProductAlertsComponent,
     ProductDetailsComponent,
-    TutorialDocsLinkComponent,
-    DeployedAppLinkComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    PersonalLinksComponent
   ],
   bootstrap: [ AppComponent ],
   // What is exports here? Apparently this is NOT necessary for this Tutorial App to function...????
