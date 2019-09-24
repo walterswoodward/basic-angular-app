@@ -12,8 +12,6 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { TutorialDocsLinkComponent } from './tutorial-docs-link/tutorial-docs-link.component';
-import { DeployedAppLinkComponent } from './deployed-app-link/deployed-app-link.component';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { PersonalLinksComponent } from './personal-links/personal-links.component';
